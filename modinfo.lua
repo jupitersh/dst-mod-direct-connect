@@ -4,8 +4,8 @@ description = [[
 QQ群457300968
 Steam组群：饥荒荒野求生
 ]]
-author = "Jupiter"
-version = "1.5.1"
+author = "辣椒小皇纸"
+version = "1.5.2"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"
@@ -33,7 +33,7 @@ configuration_options =
                         {description = "是", data = true, hover = ""},
                         {description = "否", data = false, hover = ""},
                     },
-        default = true,
+        default = false,
     },
     {
         name = "show_mainscreen_button",

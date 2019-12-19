@@ -5,7 +5,7 @@ QQ群457300968
 Steam组群：饥荒荒野求生
 ]]
 author = "辣椒小皇纸"
-version = "1.5.2"
+version = "1.6.0"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"
@@ -17,7 +17,7 @@ dst_compatible = true
 client_only_mod = true
 all_clients_require_mod = false
 
-priority = -99
+priority = 2019
 
 ----------------------
 -- General settings --
@@ -34,6 +34,21 @@ configuration_options =
                         {description = "否", data = false, hover = ""},
                     },
         default = false,
+    },
+    {
+        name = "clock_font_size",
+        label = "时钟字体大小",
+        hover = "仅在开启好看的字体后生效，解决时钟字体过大",
+        options =   {
+                        {description = "25", data = 25, hover = ""},
+                        {description = "30", data = 30, hover = ""},
+                        {description = "35", data = 35, hover = ""},
+                        {description = "40", data = 40, hover = ""},
+                        {description = "45", data = 45, hover = ""},
+                        {description = "50", data = 50, hover = ""},
+                        {description = "55", data = 55, hover = ""},
+                    },
+        default = 45,
     },
     {
         name = "show_mainscreen_button",

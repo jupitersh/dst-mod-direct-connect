@@ -18,6 +18,11 @@ local FontNames = {
 	SMALLNUMBERFONT = _G.SMALLNUMBERFONT,
 	BODYTEXTFONT = _G.BODYTEXTFONT,
 	CODEFONT = _G.CODEFONT,
+	--4 new font style
+	TALKINGFONT_WORMWOOD = _G.TALKINGFONT_WORMWOOD,
+	CHATFONT = _G.CHATFONT,
+	HEADERFONT = _G.HEADERFONT,
+	CHATFONT_OUTLINE = _G.CHATFONT_OUTLINE,
 }
 
 function ApplyLocalizedFonts()
@@ -36,6 +41,11 @@ function ApplyLocalizedFonts()
 	_G.SMALLNUMBERFONT = FontNames.SMALLNUMBERFONT
 	_G.BODYTEXTFONT = FontNames.BODYTEXTFONT
 	_G.CODEFONT = FontNames.CODEFONT
+	--4 new font style
+	_G.TALKINGFONT_WORMWOOD = FontNames.TALKINGFONT_WORMWOOD
+	_G.CHATFONT = FontNames.CHATFONT
+	_G.HEADERFONT = FontNames.HEADERFONT
+	_G.CHATFONT_OUTLINE = FontNames.CHATFONT_OUTLINE
 
 
 	_G.TheSim:UnloadFont("normalfont")
@@ -70,6 +80,11 @@ function ApplyLocalizedFonts()
 	_G.SMALLNUMBERFONT = "normalfont_outline"
 	_G.BODYTEXTFONT = "normalfont_outline"
 	_G.CODEFONT = "normalfont"
+	--4 new font style
+	_G.TALKINGFONT_WORMWOOD = "normalfont_outline"
+	_G.CHATFONT = "normalfont"
+	_G.HEADERFONT = "normalfont"
+	_G.CHATFONT_OUTLINE = "normalfont"
 
 end
 
@@ -104,7 +119,7 @@ end)
 
 AddClassPostConstruct("widgets/uiclock", function(self)
 	if self._text then
-		self._text:SetSize(45)
+		self._text:SetSize(GetModConfigData("clock_font_size")) --default: 45
 	end
 	if self._moonanim and self._moonanim.moontext then
 		self._moonanim.moontext:SetFont(FontNames.NUMBERFONT)

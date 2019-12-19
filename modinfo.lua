@@ -5,7 +5,7 @@ QQ群457300968
 Steam组群：饥荒荒野求生
 ]]
 author = "辣椒小皇纸"
-version = "1.6.0"
+version = "1.6.1"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"
@@ -17,7 +17,7 @@ dst_compatible = true
 client_only_mod = true
 all_clients_require_mod = false
 
-priority = 2019
+priority = -2019
 
 ----------------------
 -- General settings --

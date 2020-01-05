@@ -82,7 +82,7 @@ local function mainscreen_modify2(self)
     local btn_profile = {
         {name = "kaihuang", title = "󰀢开荒档󰀎", fn = function()
             self.kaihuang_button:Disable()
-            GLOBAL.c_connect("122.51.65.21", 10999)
+            GLOBAL.c_connect("118.25.101.151", 10999)
         end},
     }
 
@@ -190,7 +190,7 @@ local function multiplayermainscreen_modify2(self)
     local btn_profile = {
         {name = "kaihuang", title = "󰀢开荒档󰀎", fn = function()
             self.kaihuang_button:Disable()
-            GLOBAL.c_connect("122.51.65.21", 10999)
+            GLOBAL.c_connect("118.25.101.151", 10999)
         end},
     }
 

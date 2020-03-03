@@ -30,10 +30,6 @@ local function mainscreen_modify(self)
             self.duocheng_button:Disable()
             GLOBAL.c_connect("122.51.143.78", 10999)
         end},
-        {name = "ronglu", title = "󰀘熔炉档󰀭", fn = function()
-            self.ronglu_button:Disable()
-            GLOBAL.c_connect("118.25.125.212", 10990)
-        end},
     }
 
     for k, v in pairs(btn_profile) do
@@ -141,10 +137,6 @@ local function multiplayermainscreen_modify(self)
         {name = "duocheng", title = "󰀁多层档󰀡", fn = function()
             self.duocheng_button:Disable()
             GLOBAL.c_connect("122.51.143.78", 10999)
-        end},
-        {name = "ronglu", title = "󰀘熔炉档󰀭", fn = function()
-            self.ronglu_button:Disable()
-            GLOBAL.c_connect("118.25.125.212", 10990)
         end},
     }
 

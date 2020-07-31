@@ -30,10 +30,10 @@ local function mainscreen_modify(self)
             self.duocheng_button:Disable()
             GLOBAL.c_connect("122.51.143.78", 10999)
         end},
-        --{name = "huodong", title = "󰀊活动档󰀭", fn = function()
-            --self.huodong_button:Disable()
-            --GLOBAL.c_connect("175.24.51.242", 10999)
-        --end},
+        {name = "huodong", title = "󰀊挂机档󰀭", fn = function()
+            self.huodong_button:Disable()
+            GLOBAL.c_connect("tcx.peppernotes.top", 12999)
+        end},
     }
 
     for k, v in pairs(btn_profile) do
@@ -142,10 +142,10 @@ local function multiplayermainscreen_modify(self)
             self.duocheng_button:Disable()
             GLOBAL.c_connect("122.51.143.78", 10999)
         end},
-        --{name = "huodong", title = "󰀊活动档󰀭", fn = function()
-            --self.huodong_button:Disable()
-            --GLOBAL.c_connect("175.24.51.242", 10999)
-        --end},
+        {name = "huodong", title = "󰀊挂机档󰀭", fn = function()
+            self.huodong_button:Disable()
+            GLOBAL.c_connect("tcx.peppernotes.top", 12999)
+        end},
     }
 
     for k, v in pairs(btn_profile) do

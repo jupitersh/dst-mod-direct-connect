@@ -5,7 +5,7 @@ QQ群457300968
 Steam组群：饥荒荒野求生
 ]]
 author = "辣椒小皇纸"
-version = "1.8.6"
+version = "1.9.0"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"
@@ -33,7 +33,7 @@ configuration_options =
                         {description = "是", data = true, hover = ""},
                         {description = "否", data = false, hover = ""},
                     },
-        default = false,
+        default = true,
     },
     {
         name = "clock_font_size",

@@ -30,10 +30,10 @@ local function mainscreen_modify(self)
             self.duocheng_button:Disable()
             GLOBAL.c_connect("122.51.143.78", 10999)
         end},
-        {name = "huodong", title = "󰀊挂机档󰀭", fn = function()
-            self.huodong_button:Disable()
-            GLOBAL.c_connect("tcx.peppernotes.top", 12999)
-        end},
+        --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
+            --self.huodong_button:Disable()
+            --GLOBAL.c_connect("tcx.peppernotes.top", 12999)
+        --end},
     }
 
     for k, v in pairs(btn_profile) do
@@ -84,9 +84,9 @@ end
 
 local function mainscreen_modify2(self)
     local btn_profile = {
-        {name = "kaihuang", title = "󰀢开荒档󰀎", fn = function()
-            self.kaihuang_button:Disable()
-            GLOBAL.c_connect("175.24.51.242", 10999)
+        {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
+            self.guaji_button:Disable()
+            GLOBAL.c_connect("tcx.peppernotes.top", 12999)
         end},
     }
 
@@ -142,10 +142,10 @@ local function multiplayermainscreen_modify(self)
             self.duocheng_button:Disable()
             GLOBAL.c_connect("122.51.143.78", 10999)
         end},
-        {name = "huodong", title = "󰀊挂机档󰀭", fn = function()
-            self.huodong_button:Disable()
-            GLOBAL.c_connect("tcx.peppernotes.top", 12999)
-        end},
+        --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
+            --self.huodong_button:Disable()
+            --GLOBAL.c_connect("tcx.peppernotes.top", 12999)
+        --end},
     }
 
     for k, v in pairs(btn_profile) do
@@ -196,9 +196,9 @@ end
 
 local function multiplayermainscreen_modify2(self)
     local btn_profile = {
-        {name = "kaihuang", title = "󰀢开荒档󰀎", fn = function()
-            self.kaihuang_button:Disable()
-            GLOBAL.c_connect("175.24.51.242", 10999)
+        {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
+            self.guaji_button:Disable()
+            GLOBAL.c_connect("tcx.peppernotes.top", 12999)
         end},
     }
 
@@ -250,12 +250,12 @@ end
 
 if GetModConfigData("show_mainscreen_button") then
     AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify)
-    --AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify2)
+    AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify2)
 end
 
 if GetModConfigData("show_multiplayermainscreen_button") then
     AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify)
-    --AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify2)
+    AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify2)
 end
 
 if GetModConfigData("diy_font") then

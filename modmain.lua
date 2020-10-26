@@ -28,7 +28,7 @@ local function mainscreen_modify(self)
     local btn_profile = {
         {name = "duocheng", title = "󰀁多层档󰀡", fn = function()
             self.duocheng_button:Disable()
-            GLOBAL.c_connect("175.24.59.118", 10999)
+            GLOBAL.c_connect("cloud.peppernotes.top", 10999)
         end},
         --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
             --self.huodong_button:Disable()
@@ -140,7 +140,7 @@ local function multiplayermainscreen_modify(self)
     local btn_profile = {
         {name = "duocheng", title = "󰀁多层档󰀡", fn = function()
             self.duocheng_button:Disable()
-            GLOBAL.c_connect("175.24.59.118", 10999)
+            GLOBAL.c_connect("cloud.peppernotes.top", 10999)
         end},
         --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
             --self.huodong_button:Disable()

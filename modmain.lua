@@ -86,7 +86,7 @@ local function mainscreen_modify2(self)
     local btn_profile = {
         {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.c_connect("tc8.peppernotes.top", 12999)
+            GLOBAL.c_connect("cloud.peppernotes.top", 12999)
         end},
     }
 
@@ -198,7 +198,7 @@ local function multiplayermainscreen_modify2(self)
     local btn_profile = {
         {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.c_connect("tc8.peppernotes.top", 12999)
+            GLOBAL.c_connect("cloud.peppernotes.top", 12999)
         end},
     }
 

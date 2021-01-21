@@ -250,12 +250,12 @@ end
 
 if GetModConfigData("show_mainscreen_button") then
     AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify)
-    AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify2)
+    --AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify2)
 end
 
 if GetModConfigData("show_multiplayermainscreen_button") then
     AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify)
-    AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify2)
+    --AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify2)
 end
 
 if GetModConfigData("diy_font") then

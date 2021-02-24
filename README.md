@@ -1,4 +1,4 @@
-# Direct Connect
+# 荒野求生直连
 
 ## Overview
 

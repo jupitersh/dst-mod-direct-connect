@@ -24,11 +24,19 @@ local OnlineStatus = GLOBAL.require("widgets/onlinestatus")
 local Countdown = GLOBAL.require("widgets/countdown")
 local ImageButton = GLOBAL.require("widgets/imagebutton")
 
+local url = ""
+GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+function(result, isSuccessful, resultCode)
+    if isSuccessful and resultCode == 200 then
+        url = result
+    end
+end, "GET")
+
 local function mainscreen_modify(self)
     local btn_profile = {
         {name = "duocheng", title = "󰀁多层档󰀡", fn = function()
             self.duocheng_button:Disable()
-            GLOBAL.c_connect("cloud.peppernotes.top", 10999)
+            GLOBAL.c_connect(url, 10999)
         end},
         --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
             --self.huodong_button:Disable()
@@ -86,7 +94,7 @@ local function mainscreen_modify2(self)
     local btn_profile = {
         {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.c_connect("cloud.peppernotes.top", 12999)
+            GLOBAL.c_connect(url, 12999)
         end},
     }
 
@@ -140,7 +148,7 @@ local function multiplayermainscreen_modify(self)
     local btn_profile = {
         {name = "duocheng", title = "󰀁多层档󰀡", fn = function()
             self.duocheng_button:Disable()
-            GLOBAL.c_connect("cloud.peppernotes.top", 10999)
+            GLOBAL.c_connect(url, 10999)
         end},
         --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
             --self.huodong_button:Disable()
@@ -198,7 +206,7 @@ local function multiplayermainscreen_modify2(self)
     local btn_profile = {
         {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.c_connect("cloud.peppernotes.top", 12999)
+            GLOBAL.c_connect(url, 12999)
         end},
     }
 

@@ -92,9 +92,9 @@ end
 
 local function mainscreen_modify2(self)
     local btn_profile = {
-        {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
+        {name = "guaji", title = "󰀊开荒档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.c_connect(url, 12999)
+            GLOBAL.c_connect(url, 11999)
         end},
     }
 
@@ -204,9 +204,9 @@ end
 
 local function multiplayermainscreen_modify2(self)
     local btn_profile = {
-        {name = "guaji", title = "󰀊挂机档󰀭", fn = function()
+        {name = "guaji", title = "󰀊开荒档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.c_connect(url, 12999)
+            GLOBAL.c_connect(url, 11999)
         end},
     }
 
@@ -258,12 +258,12 @@ end
 
 if GetModConfigData("show_mainscreen_button") then
     AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify)
-    --AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify2)
+    AddClassPostConstruct("screens/redux/mainscreen", mainscreen_modify2)
 end
 
 if GetModConfigData("show_multiplayermainscreen_button") then
     AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify)
-    --AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify2)
+    AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify2)
 end
 
 if GetModConfigData("diy_font") then

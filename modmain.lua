@@ -35,10 +35,15 @@ local function mainscreen_modify(self)
                 end
             end, "GET")
         end},
-        --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
-            --self.huodong_button:Disable()
-            --GLOBAL.c_connect("tcx.peppernotes.top", 12999)
-        --end},
+        {name = "kaihuang", title = "󰀊开荒档󰀭", fn = function()
+            self.kaihuang_button:Disable()
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+            function(result, isSuccessful, resultCode)
+                if isSuccessful and resultCode == 200 then
+                    GLOBAL.c_connect(result, 11011)
+                end
+            end, "GET")
+        end},
     }
 
     for k, v in pairs(btn_profile) do
@@ -157,10 +162,15 @@ local function multiplayermainscreen_modify(self)
                 end
             end, "GET")
         end},
-        --{name = "huodong", title = "󰀊挂机档󰀭", fn = function()
-            --self.huodong_button:Disable()
-            --GLOBAL.c_connect("tcx.peppernotes.top", 12999)
-        --end},
+        {name = "kaihuang", title = "󰀊开荒档󰀭", fn = function()
+            self.kaihuang_button:Disable()
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+            function(result, isSuccessful, resultCode)
+                if isSuccessful and resultCode == 200 then
+                    GLOBAL.c_connect(result, 11011)
+                end
+            end, "GET")
+        end},
     }
 
     for k, v in pairs(btn_profile) do

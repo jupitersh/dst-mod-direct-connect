@@ -5,7 +5,7 @@ QQ群457300968
 Steam组群：饥荒荒野求生
 ]]
 author = "辣椒小皇纸"
-version = "1.15.0"
+version = "1.16.0"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"
@@ -25,16 +25,6 @@ priority = -2019
 
 configuration_options =
 {
-    {
-        name = "diy_font",
-        label = "好看的字体",
-        hover = "",
-        options =   {
-                        {description = "是", data = true, hover = ""},
-                        {description = "否", data = false, hover = ""},
-                    },
-        default = true,
-    },
     {
         name = "clock_font_size",
         label = "时钟字体大小",

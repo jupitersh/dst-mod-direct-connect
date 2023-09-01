@@ -288,6 +288,4 @@ if GetModConfigData("show_multiplayermainscreen_button") then
     -- AddClassPostConstruct("screens/redux/multiplayermainscreen", multiplayermainscreen_modify2)
 end
 
-if GetModConfigData("diy_font") then
-    modimport("scripts/fonts.lua")
-end
+modimport("scripts/fonts.lua")

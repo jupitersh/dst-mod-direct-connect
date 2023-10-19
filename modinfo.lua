@@ -5,7 +5,7 @@ QQ群457300968
 Steam组群：饥荒荒野求生
 ]]
 author = "辣椒小皇纸"
-version = "1.16.0"
+version = "1.17.0"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"

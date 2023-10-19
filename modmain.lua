@@ -28,19 +28,19 @@ local function mainscreen_modify(self)
     local btn_profile = {
         {name = "duocheng", title = "󰀁多层档󰀡", fn = function()
             self.duocheng_button:Disable()
-            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip",
             function(result, isSuccessful, resultCode)
                 if isSuccessful and resultCode == 200 then
                     GLOBAL.c_connect(result, 10999)
                 end
             end, "GET")
         end},
-        {name = "kaihuang", title = "󰀊开荒档󰀭", fn = function()
-            self.kaihuang_button:Disable()
-            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+        {name = "reforged", title = "󰀊熔炉档󰀭", fn = function()
+            self.reforged_button:Disable()
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip",
             function(result, isSuccessful, resultCode)
                 if isSuccessful and resultCode == 200 then
-                    GLOBAL.c_connect(result, 11011)
+                    GLOBAL.c_connect(result, 11999)
                 end
             end, "GET")
         end},
@@ -96,7 +96,7 @@ local function mainscreen_modify2(self)
     local btn_profile = {
         {name = "guaji", title = "󰀊开荒档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip",
             function(result, isSuccessful, resultCode)
                 if isSuccessful and resultCode == 200 then
                     GLOBAL.c_connect(result, 11999)
@@ -155,19 +155,19 @@ local function multiplayermainscreen_modify(self)
     local btn_profile = {
         {name = "duocheng", title = "󰀁多层档󰀡", fn = function()
             self.duocheng_button:Disable()
-            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip",
             function(result, isSuccessful, resultCode)
                 if isSuccessful and resultCode == 200 then
                     GLOBAL.c_connect(result, 10999)
                 end
             end, "GET")
         end},
-        {name = "kaihuang", title = "󰀊开荒档󰀭", fn = function()
-            self.kaihuang_button:Disable()
-            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+        {name = "reforged", title = "󰀊熔炉档󰀭", fn = function()
+            self.reforged_button:Disable()
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip",
             function(result, isSuccessful, resultCode)
                 if isSuccessful and resultCode == 200 then
-                    GLOBAL.c_connect(result, 11011)
+                    GLOBAL.c_connect(result, 11999)
                 end
             end, "GET")
         end},
@@ -223,7 +223,7 @@ local function multiplayermainscreen_modify2(self)
     local btn_profile = {
         {name = "guaji", title = "󰀊开荒档󰀭", fn = function()
             self.guaji_button:Disable()
-            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip", 
+            GLOBAL.TheSim:QueryServer("https://gitee.com/jupitersh/dstgriefer/raw/master/ip",
             function(result, isSuccessful, resultCode)
                 if isSuccessful and resultCode == 200 then
                     GLOBAL.c_connect(result, 11999)
